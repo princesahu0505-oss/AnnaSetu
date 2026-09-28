@@ -1,0 +1,44 @@
+:root {
+  --primary: #0B5D45;
+  --primary-hover: #084936;
+  --forest: #073B2A;
+  --deep-blue: #123B5D;
+  --saffron: #E59A24;
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
+
+  --bg-warm: #FAF9F5;
+  --surface: #FFFFFF;
+  --surface-alt: #F3F4F6;
+  --text-main: #18181B;
+  --text-muted: #64748B;
+  --border-subtle: #E2E8F0;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  background-color: var(--bg-warm);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,35 @@
+model_list:
+
+  # Gemini
+  - model_name: gemini-free
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  # Groq
+  - model_name: groq-free
+    litellm_params:
+      model: groq/llama-3.3-70b-versatile
+      api_key: os.environ/GROQ_API_KEY
+
+  # Cerebras
+  - model_name: cerebras-free
+    litellm_params:
+      model: cerebras/llama-3.3-70b
+      api_key: os.environ/CEREBRAS_API_KEY
+
+  # OpenRouter
+  - model_name: openrouter-free
+    litellm_params:
+      model: openrouter/meta-llama/llama-3.3-70b-instruct:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # Local Ollama
+  - model_name: ollama-local
+    litellm_params:
+      model: ollama/llama3.2
+      api_base: http://127.0.0.1:11434
+
+router_settings:
+  routing_strategy: simple-shuffle
+  num_retries: 2
